@@ -10,6 +10,7 @@
 #include <FL/Fl_File_Chooser.H>
 #include <FL/fl_ask.H>
 #include "editorWindow.hpp"
+#include <iostream>
 
 int changed = 0;
 char filename[256] = "";
@@ -79,7 +80,7 @@ void find2_cb(Fl_Widget *w, void *v) {
     find_cb(w, v);
     return;
   }
-  int pos = e->editor->insert_position();
+  int pos = 0;
   int found = textbuf->search_forward(pos, e->search, &pos);
   if (found) {
     textbuf->select(pos, pos + strlen(e->search));
