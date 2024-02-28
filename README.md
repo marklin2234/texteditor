@@ -1,6 +1,6 @@
 # Text Editor
 
-This text editor is created using FTLK GC++ UI toolkit. We want our text editor to achieve the following functions:
+This text editor is created using FLTK GC++ UI toolkit. We want our text editor to achieve the following functions:
 
 1. Provide a menubar/menus for all functions.
 2. Edit a single text file, possibly with multiple views.
@@ -12,13 +12,7 @@ This text editor is created using FTLK GC++ UI toolkit. We want our text editor 
 
 
 ## Installation
-1. Install the latest release.
-2. Install the latest release of FTLK.
-3. In the source directory, run
-```
-ftlk-config --compile editor.cpp
-```
-4. Then, in the same directory, run
-```
-./editor
-```
+Download the executable `editor.app`.
+
+Run the desktop application to run the editor.
+
